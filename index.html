@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>School Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src=""></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="navbar-inverse my_nav_bar">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menubar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">St.Michael's School</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="menubar">
+            <ul class="nav navbar-nav">
+                <li><a href="#campuslife">Campus Life</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#what's_new">What's New</a></li>
+                <li><a href="#alumni">Alumni</a></li>
+                <li><a href="#contactus">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="announcement">
+            <marquee id="marqueeStyle" onmouseover="this.stop();" onmouseout="this.start();">
+                *** Please contact us on office@stmichaelsprimary.bournemouth.sch.uk for any queries ***
+            </marquee>
+        </div>
+
+        <iframe id="video" src="https://www.youtube.com/embed/0lIp8Av3xVA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="page-header col-lg-12 col-md-12 col-sm--12 col-xs-12" id="campuslife">
+            <h2 class="text-capitalize">campus life</h2>
+        </div>
+        <div class="row">
+            <div class="campus_life_mainDiv col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <img class="img_responsive" src="school_library.jpg">
+                <h6 class="text-capitalize text-left"><kbd>school library</kbd></h6>
+                <hr>
+                <p class="text-muted text text-left">The Library is full of books to read.There are about a 100 of them here.</p>
+            </div>
+
+            <div class="campus_life_mainDiv col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <img class="img_responsive" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/St_Mikes_Baltimore.JPG/768px-St_Mikes_Baltimore.JPG">
+                <h6 class="text-capitalize text-left"><kbd>school church</kbd></h6>
+                <hr>
+                <p class="text-muted text text-left">During Christmas,the whole school comes here to sing songs and tell stories about Jesus which will be shown to the parents as a concert.</p>
+            </div>
+            
+             <div class="campus_life_mainDiv col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <img class="img_responsive" src="https://thelearningexpresspreschool.com/wp-content/uploads/2017/08/early_preschool_room_3.jpg">
+                <h6 class="text-capitalize text-left"><kbd>rainbow room</kbd></h6>
+                 <hr>
+                <p class="text-muted text text-left">In this room you will find some resources and activities that will help you with mindfulness, growth mindset and calming activities to help you when angry moments might start to appear.</p>
+            </div>
+            
+            <div class="page-header" id="achievements">
+				<h2 class="text-capitalize">school achievements</h2>
+			</div>
+            <div class="bg-primary movie_head" data-toggle="collapse" data-target="#school_achievement1">Inter School Debate Competition<i class="fa fa-sort-desc"></i>
+			</div>
+                <div id="school_achievement1" class="collapse">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="achievementsID">
+					<img src="https://www.stthomasblackburn.org.uk/wp-content/uploads/2016/05/IMG_1767-300x225.jpg" class="img-responsive img-thumbnail">
+                </div>
+					 <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 movie_text">
+						 <h4 class="text-success text-left text-capitalize">Won first prize in inter shool debate on enviroment pollution</h4>
+						 <p>Congratulations to the students who participated in the inter school debate competition. Our school has emerged first among the 20 schools participated in this competiton.</p>
+					</div>                                                                                         
+             </div>
+             <div class="bg-primary movie_head" data-toggle="collapse" data-target="#school_achievement2">Inter School Football Competition<i class="fa fa-sort-desc"></i>
+			</div>
+                <div id="school_achievement2" class="collapse">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="achievementsID">
+					<img src="data:image/jpeg;base64,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" class="img-responsive img-thumbnail">
+                </div>
+					 <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 movie_text">
+						 <h4 class="text-success text-left text-capitalize">Won first prize in inter shool Football competition</h4>
+						 <p>A fantastic game of football on a sunny afternoon at Park school. The odd goal in 7 gave our School the crown despite a fantastic second half display from the opponent team. </p>
+					</div>                                                                                         
+             </div>
+			<div class="bg-primary movie_head" data-toggle="collapse" data-target="#school_achievement3">Inter School Art Competition<i class="fa fa-sort-desc"></i>
+			</div>
+                <div id="school_achievement3" class="collapse">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="achievementsID">
+					<img src="https://www.shottermill-jun.surrey.sch.uk/_site/data/images/news/59/main-photo%20art%20comp.jpg" class="img-responsive img-thumbnail">
+                </div>
+					 <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 movie_text">
+						 <h4 class="text-success text-left text-capitalize">Won first prize in inter shool art competition</h4>
+						 <p>Art Competition is a brilliant opportunity for young artists to compete internationally and showcase their talent. There were nearly 600 entries from students in 99 schools worldwide. Congratulations to the winners.</p>
+					</div>                                                                                         
+             </div>
+			 <div class="page-header col-lg-12 col-md-12 col-sm-12 col-xs-12" id="what's_new">
+			<h2 class="text-capitalize text-left">what's new</h2>
+			</div>
+			<ul class="list-group">
+			<li class="list-group-items list-group-item-success col-lg-12 col-md-12 col-sm-12 col-xs-12 whats_new_li">
+				<h4 class="text-left">Canteen/Hall</h4>
+				<img src="https://tse4.mm.bing.net/th?id=OIP.XUg794Opxu96aBHQCX0PEQHaFj&pid=Api&P=0&w=228&h=172" class="img-responsive col-lg-5 col-md-5 col-sm-5 col-xs-12">
+				<p class="list-group-item-text text-left col-lg-7 col-md-7 col-sm-7 col-xs-12">St. Michael's now has a new canteen.It is as big as two class rooms and well organised, more efficient than they have been in the past. Online Menus with the photographs of the food that is prepared and the detailed description of the ingredients help the students and parents make the right nutritional choices.  </p>
+				<p>Each student or staff member who accesses the canteen would be provided with a School canteen account that keeps track of previous meal choices and any dietry requirements they may have.Ordering online by
+				clicking on a box and paying money online can eliminate all the fuss of money handling,making it safe and less complicated for staff and students alike.Home again,delivery is the key.</p>
+				</li>
+				<li class="list-group-items list-group-item-warning col-lg-12 col-md-12 col-sm-12 col-xs-12 whats_new_li">
+				<h4 class="text-left">New Parent App</h4>
+				<img src="https://is4-ssl.mzstatic.com/image/thumb/Purple124/v4/37/bf/2b/37bf2ba7-aab2-4075-bb17-f85d6d2a0d41/source/512x512bb.jpg" class="img-responsive col-lg-5 col-md-5 col-sm-5 col-xs-12">
+					<p class="list-group-item-text text-left col-lg-7 col-md-7 col-sm-7 col-xs-12">We are very pleased to announce that we are introducing a fantastic new way to
+						communicate and share information with you, our parent community. At St Michael’s school we want you to feel as much a part of their education as possible. With the increased
+						use of smart phone technology we want to make best use of it.</p>
+					<p class="list-group-item-text text-left col-lg-7 col-md-7 col-sm-7 col-xs-12">This is a free parent app that gives you a multitude of communication and information features to stay in touch with what is going on at school. The app gives you direct access to information about your child and we will be gradually adding more to it over time. You will also see that we update and change the information in the app as the school year moves along.</p>
+
+					<p class="list-group-item-text text-left col-lg-7 col-md-7 col-sm-7 col-xs-12">We are able to send you messages directly to the app relating to important information about your child's education and to remind you of events that are taking place at school.</p>
+
+					<p class="list-group-item-text text-left col-lg-7 col-md-7 col-sm-7 col-xs-12">You will receive a notification if we send you a message and there is no charge for the messages you send to us.</p>
+				</li>
+			</ul>
+			
+			<div class="page-header col-lg-12 col-md-12 col-sm-12 col-xs-12" id="alumni">
+			<h2 class="text-capitalize">our alumni</h2>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 book" id="alumniList" data-toggle="modal" data-target="#school_alumni1">
+			<img src="https://englishtribuneimages.blob.core.windows.net/gallary-content/2020/7/2020_7$largeimg_1838542505.jpg" class="img-responsive img-circle">
+				<hr >
+		<p class="text-primary">Aditya Thackeray</p>
+			</div>
+			<div class="modal fade" id="school_alumni1">
+			<div class="modal-dialog">
+			<div class="modal-content">
+			<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal">&times;</button>
+			<h4 class="modal-title text-left">Aditya Thackeray</h4>
+				</div>
+				<br>
+				<div class="modal-body">
+				<img src="https://englishtribuneimages.blob.core.windows.net/gallary-content/2020/7/2020_7$largeimg_1838542505.jpg">
+					<p class="p_modal">Aditya Uddhav Thackeray (born 13 June 1990) is an Indian Politician serving as Cabinet Minister of Tourism and Environment for the Government of Maharashtra.<br>
+				<a href="https://en.wikipedia.org/wiki/Aaditya_Thackeray"><b>To Know More</b></a>
+			</p>
+				</div>
+				</div>
+				</div>	
+				</div>
+				
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 book" id="alumniList" data-toggle="modal" data-target="#school_alumni2">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Vidya_Balan_promoting_Mission_Mangal.jpg/200px-Vidya_Balan_promoting_Mission_Mangal.jpg" class="img-responsive img-circle">
+				<hr >
+		<p class="text-primary">Vidya Balan</p>
+			</div>
+			<div class="modal fade" id="school_alumni2">
+			<div class="modal-dialog">
+			<div class="modal-content">
+			<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal">&times;</button>
+			<h4 class="modal-title text-left">Vidya Balan</h4>
+				</div>
+				<br>
+				<div class="modal-body">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Vidya_Balan_promoting_Mission_Mangal.jpg/200px-Vidya_Balan_promoting_Mission_Mangal.jpg">
+					<p class="p_modal">Vidya was born on 1 January 1979 in Bombay (present-day Mumbai), into a Tamil Brahmin family. Her father, P. R. Balan, is the executive vice-president of Digicable and her mother, Saraswathy Balan, is a homemaker. According to Vidya, they speak a mix of Tamil and Malayalam at home.<br>
+				<a href="https://en.wikipedia.org/wiki/Vidya_Balan"><b>To Know More</b></a>
+			</p>
+				</div>
+				</div>
+				</div>	
+				</div>
+			
+            
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 book" id="alumniList" data-toggle="modal" data-target="#school_alumni3">
+			<img src="https://thumbor.forbes.com/thumbor/fit-in/416x416/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5c7d7829a7ea434b351ba0b6%2F0x0.jpg%3Fbackground%3D000000%26cropX1%3D206%26cropX2%3D2043%26cropY1%3D250%26cropY2%3D2089" class="img-responsive img-circle">
+				<hr >
+		<p class="text-primary">Mukesh Ambani</p>
+			</div>
+			<div class="modal fade" id="school_alumni3">
+			<div class="modal-dialog">
+			<div class="modal-content">
+			<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal">&times;</button>
+			<h4 class="modal-title text-left">Mukesh Ambani</h4>
+				</div>
+				<br>
+				<div class="modal-body">
+				<img src="https://thumbor.forbes.com/thumbor/fit-in/416x416/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5c7d7829a7ea434b351ba0b6%2F0x0.jpg%3Fbackground%3D000000%26cropX1%3D206%26cropX2%3D2043%26cropY1%3D250%26cropY2%3D2089">
+					<p class="p_modal">Mukesh Dhirubhai Ambani (born 19 April 1957) is an Indian billionaire businessman, and the chairman, managing director, and largest shareholder of Reliance Industries Ltd. (RIL), a Fortune Global 500 company and India's most valuable company by market value. According to Forbes, he is the richest person in Asia with a net worth of US$84.5 billion and the 10th richest person in the world, as of 22 May 2021<br>
+				<a href="https://en.wikipedia.org/wiki/Mukesh_Ambani"><b>To Know More</b></a>
+			</p>
+				</div>
+				</div>
+				</div>	
+				</div>
+		
+				
+				<div class="page-header col-lg-12 col-md-12 col-sm-12 col-xs-12" id="contactus">
+                <h1 class="text-capitalize">contact us</h1>
+            </div>
+    
+			</div>
+        <div id="map" class="map col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2526.0546719734825!2d-1.889984384048998!3d50.71892487586397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4873a1b96dfd077f%3A0xc3dfbbdf6836015e!2sSt%20Michael&#39;s%20C%20of%20E%20Primary%20School%2C%20Bournemouth!5e0!3m2!1sen!2suk!4v1622386488857!5m2!1sen!2suk" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="Details">
+            <img class="img-responsive img-circle col-lg-3 col-md-3 col-sm-3 col-xs-4" src="Principal.png">
+            <h2> Principal Name: </h2>
+            <h3>Mr A Evans</h3>
+            <div class="contact_1 col-lg-3 col-md-3 col-sm-3 col-xs-4">
+                <a href="mailto:office@stmichaelsprimary.bournemouth.sch.uk">
+                    <h4><i class="fa fa-envelope"></i>&nbsp;&nbsp;office@stmichaelsprimary.bournemouth.sch.uk</h4>
+                </a>
+                <a href="#">
+                    <h4><i class="fa fa-phone-square"></i>&nbsp;&nbsp;01202 290497</h4>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
